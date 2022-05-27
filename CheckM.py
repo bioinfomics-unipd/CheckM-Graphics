@@ -1,12 +1,10 @@
 #Python
 engine='python'
-#FUNZIONA TUTTO
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import PyPDF2 as pdf #dovrei poterla togliere
 import argparse
 from matplotlib.backends.backend_pdf import PdfPages
 from os import listdir
@@ -66,8 +64,8 @@ def scatterplotting(data):
                palette='Blues')
     title = 'Quality MAGs scatterplot'
     plt.title(title, fontsize=30)
-    plt.xlabel('Completeness',fontsize=26)
-    plt.ylabel('Contamination',fontsize=26)    
+    plt.ylabel('Completeness',fontsize=26)
+    plt.xlabel('Contamination',fontsize=26)    
     plt.legend(loc='upper right',fontsize=25)
     return scatterplot
 
@@ -178,4 +176,3 @@ for txt in files:
     global_parameter(data, A=args.A, B=args.B, C=args.C, D=args.D, E=args.E)
     data.sort_values(by= ['GP', 'Completeness'], ascending= False, inplace= True)
     Graphs(data, txt)
-
