@@ -15,3 +15,4 @@ Run the script within the Python environment. Required libraries are Numpy, Pand
 Set the environment: create a folder called CheckM_inputs containing the file to analyze (in the form of CheckM outputs) and place it in the same directory of the script. At the end one pdf is generated for each input file.
 ### Optional Parameters
 The Global Parameter function uses some constants that are set to a default values. However these constants can be changed by the users to give different weights to the variables (Completeness, Contamination, Strain Heterogeneity, N50) in order to choose which variables influence more the Global Parameter. 
+![image](https://user-images.githubusercontent.com/106092160/170738673-a8fce1cf-752c-466f-9b4b-eb9948f834d7.png)
