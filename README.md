@@ -9,9 +9,9 @@ CheckM provides a set of tools for assessing the quality of genomes recovered fr
 ***
 Our Script allows to obtain a graphical visualization of checkM outputs. It is possible to have a clear first impression of your MAGs quality. The script autonomously generates one pdf file for each given input, several input can be analysed in a single run.  
 ***
-#### Software requirements
+### Software requirements
 Run the script within the Python environment. Required libraries are Numpy, Pandas, Matplotlib.pyplot, Seaborn, Argparse, matplotlib.backends.backend_pdf, listdir(from os), isfile, join (from os.path)
-##### Using CheckM-Graphics
+### Using CheckM-Graphics
 Set the environment: create a folder called CheckM_inputs containing the file to analyze (in the form of CheckM outputs) and place it in the same directory of the script. At the end one pdf is generated for each input file.
-###### Optional Parameters
+### Optional Parameters
 The Global Parameter function uses some constants that are set to a default values. However these constants can be changed by the users to give different weights to the variables (Completeness, Contamination, Strain Heterogeneity, N50) in order to choose which variables influence more the Global Parameter. 
