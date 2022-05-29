@@ -23,7 +23,7 @@ parser.add_argument('-E',type=float, action='store', default=0, help='an int or 
 args=parser.parse_args()
 
 
-#Calculate global paramenter for each bin and add column to the dataframe
+#Calculate global parameter for each bin and add column to the dataframe
 def global_parameter(data, A=1, B=5, C=1, D=0.5, E=0):
     """
     function to calculate a global parameter representing the global quality of the MAGs.
@@ -36,19 +36,19 @@ def global_parameter(data, A=1, B=5, C=1, D=0.5, E=0):
             +D*np.log10(data['N50 (scaffolds)'])
             +E*np.log10(data['Genome size (bp)'])), 2)
     
-# Global Paramente graph
+# Global Parameter graph
 def GP_graph(data):
     #global_parameter(data)
     
     GP_plot=data[['Bin Id', 'GP']].plot(figsize= (20,25),
         x= 'Bin Id',
         kind = 'barh',
-        title = 'Global Paramenter',
+        title = 'Global Parameter',
         mark_right = True)
     for index, value in enumerate(data['GP']):
         GP_plot.text(value +3, index , str(value))
         
-    plt.title('Global Paramenter', fontsize= 30)
+    plt.title('Global Parameter', fontsize= 30)
     plt.ylabel('Bin Id', fontsize =20)
     plt.xlabel('Percentage(%)',fontsize =20)
     return GP_plot
