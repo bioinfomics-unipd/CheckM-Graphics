@@ -11,7 +11,7 @@ The checkM-Graphics software allows the graphical visualization of the previousl
 An additional parameter is calculated and plotted with respect to the ones of CheckM: the Global Parameter (GP). GP can be used to estimate MAGs quality without having to take into account any other, useful to compare different samples quality. The script autonomously generates one pdf file for each given input, several input can be analysed in a single run.  
 ***
 ### Software requirements
-Run the script within the Python environment. Required libraries are Numpy, Pandas, Matplotlib.pyplot, Seaborn, Argparse, matplotlib.backends.backend_pdf, listdir(from os), isfile, join (from os.path). 
+Run the script within the Python environment. Required libraries are Numpy, Pandas, Matplotlib.pyplot, Seaborn, Argparse, PyPDF2, matplotlib.backends.backend_pdf, listdir(from os), isfile, join (from os.path). 
 ***
 ### Using CheckM-Graphics
 Set the environment: create a folder called CheckM_inputs containing the file to analyze (in the form of CheckM outputs) and place it in the same directory of the script. At the end one pdf is generated for each input file.
