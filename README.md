@@ -2,7 +2,7 @@
 Script for the Microbial Metagenomics laboratory, A.Y. 2021/2022.
 ***
 ## Citations
-This code was developed as part of a project carried out during the course of Microbial Metagenomics (Molecular Biology master degree) at the University of Padova. The project was supervised by Prof. Stefano Campanaro, Dr. Maria Silvia Morlino, Dr. Edoardo Bizzotto, and Dr. Gabriele Ghiotto.
+This code was developed as part of a project carried out during the course of Microbial Metagenomics (Molecular Biology master degree) at the University of Padova by M.Clara Staropoli, Gaia Tussardi and Cecilia Carmignoto. The project was supervised by Prof. Stefano Campanaro, Dr. Maria Silvia Morlino, Dr. Edoardo Bizzotto, and Dr. Gabriele Ghiotto.
 ***
 ### Overview
 CheckM provides a set of tools for assessing the quality of genomes recovered from isolates, single cells, or metagenomes. It provides robust estimates of genome completeness and contamination by using collocated sets of genes that are ubiquitous and single-copy within a phylogenetic lineage. It uses a broader set of marker genes specific to the position of a genome within a reference genome tree and information about the collocation of these genes. CheckM has implemented the previous methods for assessing genome quality that were ad hoc and generally made use of a limited number of marker genes conserved across all bacterial or archeal genomes.
